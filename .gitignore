@@ -1,0 +1,5 @@
+# Created by .ignore support plugin (hsz.mobi)
+*.xml
+*.iml
+*.pyc
+*.sqlite3
