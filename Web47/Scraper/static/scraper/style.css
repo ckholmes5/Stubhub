@@ -1,3 +1,26 @@
-.myclass{
-    background-color: blue;
+body{
+    background-color: black;
 }
+
+#header{
+    padding:0;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    height: 125px;
+}
+
+#header_text{
+    color:white;
+    text-align: center;
+}
+
+.header-gradient{
+    background: #42f48f; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(45deg, #43c6a1, #3ddfe5); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(45deg, #43c6a1, #3ddfe5); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(45deg, #43c6a1, #3ddfe5); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(45deg, #43c6a1, #3ddfe5); /* Standard syntax */
+}
+

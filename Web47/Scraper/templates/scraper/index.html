@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <title>SCRAPING AMO THEFUCKER</title>
     {% load static %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static 'scraper/scraper.js' %}"></script>
     <link rel="stylesheet" type="text/css" href="{% static 'scraper/style.css' %}" />
 
 </head>
 <body>
-    <h1> THIS IS THE GREATEST EVER</h1>
-    <div class='myclass' style="width:100px;height:100px;"></div>
+    <div id="header" class="header-gradient">
+        <h1 id="header_text">{{date}}</h1>
+    </div>
+    <div id="body">
+
+        <p id='token' style="color:white"></p>
+    </div>
 
 </body>
 </html>

@@ -12,7 +12,7 @@ from django.shortcuts import render
 import requests
 import pprint
 import pandas as pd
-import datetime
+from datetime import datetime
 import re
 import time
 from settings import (basic_authorization_token, stubhub_username,
@@ -21,13 +21,15 @@ from settings import (basic_authorization_token, stubhub_username,
 
 from django.http import HttpResponse
 from django.shortcuts import render
+from rest_framework.response import Response
 
 
 
 
 
 def index(request):
-    return render(request, 'scraper/index.html')
+    date = datetime.now()
+    return render(request, 'scraper/index.html', {'date': date})
 
 
 
@@ -144,3 +146,5 @@ def scrape(request):
 
         time.sleep(3600 * 24)  # scrape every 24 hours
     '''
+
+    return Response(token_respoonse)
